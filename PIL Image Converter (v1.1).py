@@ -2,6 +2,17 @@ from PIL import Image
 from os import listdir
 from time import sleep
 
+print('''
+{}
+
+A basic image convert coded out of Python 3
+and PyInstaller. 
+If nothing appears below, please place this
+execution file in directory with the images.
+Note that only compatible images will appear.
+
+List of compatible files:'''.format(path.basename(__file__)[:len(path.basename(__file__))-3]))
+
 ext_list = ("bmp","dib","eps","gif","ico","msp","pcx","png","ppm","sgi","tga","blp","cur","dds","mpo","pcd","psd","xpm")
 the_list = [x for x in listdir('.') if x[len(x)-3:len(x)] in ext_list]
 
