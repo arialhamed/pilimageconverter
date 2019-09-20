@@ -38,4 +38,4 @@ try:
 except:
     print('Operation failed...')
 finally:
-    sleep(1)
+    sleep(3)
